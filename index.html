@@ -1,88 +1,144 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <div class='tableauPlaceholder' id='viz1743781425166' style='position: relative'><noscript><a href='#'><img
-                    alt='Overview '
-                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;P3&#47;P374NH87G&#47;1_rss.png'
-                    style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-            <param name='embed_code_version' value='3' />
-            <param name='path' value='shared&#47;P374NH87G' />
-            <param name='toolbar' value='yes' />
-            <param name='static_image'
-                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;P3&#47;P374NH87G&#47;1.png' />
-            <param name='animate_transition' value='yes' />
-            <param name='display_static_image' value='yes' />
-            <param name='display_spinner' value='yes' />
-            <param name='display_overlay' value='yes' />
-            <param name='display_count' value='yes' />
-            <param name='language' value='en-US' />
-            <param name='filter' value='publish=yes' />
-        </object></div>
-    <script
-        type='text/javascript'>                    var divElement = document.getElementById('viz1743781425166'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '1400px'; vizElement.style.height = '877px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
     <meta charset="UTF-8">
-    <title>HR Tableau Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analytics Dashboard 🎉</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            background: #f0f0f0;
-            color: #333;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            padding: 0;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: #fff;
+            animation: fadeIn 2s ease-in;
         }
 
-        .background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background: linear-gradient(270deg, #4e73df, #1cc88a, #36b9cc);
-            background-size: 600% 600%;
-            animation: GradientAnimation 16s ease infinite;
-            z-index: -1;
-        }
-
-        @keyframes GradientAnimation {
-            0% {
-                background-position: 0% 50%;
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
             }
 
-            50% {
-                background-position: 100% 50%;
+            to {
+                opacity: 1;
+            }
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(90deg, #ff6b6b, #ff8e53);
+            animation: slideIn 1.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+
+        .tableau-placeholder {
+            height: 600px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
             }
 
             100% {
-                background-position: 0% 50%;
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
             }
         }
 
-        .dashboard-container {
-            position: relative;
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: linear-gradient(90deg, #ff6b6b, #ff8e53);
+            position: fixed;
             width: 100%;
-            height: 100%;
-        }
-
-        iframe {
-            width: 100%;
-            height: 500px;
-            border: none;
-        }
-
-        iframe[title="Data Visualization"] {
-            margin-top: 25px !important;
+            bottom: 0;
         }
     </style>
 </head>
 
 <body>
-    <div class="background"></div>
+    <header>
+        <h1>Data Analytics Fun! 🚀📈</h1>
+    </header>
+    <nav>
+        <a href="#overview">Overview 🌟</a>
+        <a href="#insights">Insights 🔍</a>
+        <a href="#trends">Trends 📊</a>
+    </nav>
+    <div class="container">
+        <h2>Explore Our Data! 🎊</h2>
+        <p>Check out the amazing analytics below, powered by Tableau! ✨</p>
+        <div class='tableauPlaceholder' id='viz1746794742189' style='position: relative'><noscript><a href='#'><img
+                        alt='Overview '
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;HR&#47;HRDashboard_17437806912550&#47;Overview&#47;1_rss.png'
+                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='HRDashboard_17437806912550&#47;Overview' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;HR&#47;HRDashboard_17437806912550&#47;Overview&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+            </object></div>
+        <script
+            type='text/javascript'>                    var divElement = document.getElementById('viz1746794742189'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '1400px'; vizElement.style.height = '877px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <p>Importance of this data: Helps us make smart decisions! 💡📉</p>
+    </div>
+    <footer>
+        <p>© 2025 Data Lovers Inc. ❤️</p>
+    </footer>
 </body>
 
 </html>
